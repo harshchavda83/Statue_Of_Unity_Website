@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/img5.png");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: rgb(155, 40, 40);
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: rgb(123, 56, 56);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: rgb(183, 46, 46);
+  border-radius: 22px;
+  border: 30px;
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.navbar {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 30px;
+  font-size: 2.92vmin;
+  position: sticky;
+  top: 0;
+}
+
+.active {
+  color: brown;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* event section */
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: rgb(79, 79, 143);
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row .col img {
+  width: 69%;
+}
+
+.events .row {
+  margin-top: 50px;
+}
+
+h4 {
+  font-size: 3vmin;
+  color: rgb(79, 79, 143);
+  margin: 20px auto;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+p {
+  color: #636262;
+  padding: 0px 40px;
+  font-size: 2.35vmin;
+  font-family: "Golos Text", sans-serif;
+}
+
+.events .ctn {
+  margin-top: 30px;
+}
+
+.explore {
+  width: 100%;
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.explore::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.45;
+  background-image: url("images/img2.png");
+}
+
+.explore-content {
+  width: 60%;
+  padding: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.explore-content h1 {
+  font-size: 7vmin;
+  color: rgb(67, 67, 122);
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.explore-content .line {
+  margin-bottom: 50px;
+}
+
+.primary {
+  color: rgb(117, 30, 30);
+  font-family: "Golos Text", sans-serif;
+  font-size: 3vmin;
+}
+
+.first {
+  font-size: 2.9vmin;
+  font-weight: bold;
+  font-family: "Golos Text", sans-serif;
+}
+
+.explore-content p {
+  color: rgb(28, 28, 82);
+  font-size: 2.5vmin;
+  font-family: "Golos Text", sans-serif;
+}
+
+.explore-content .ctn {
+  margin-top: 40px;
+}
+
+.tours .row .col {
+  width: 50%;
+}
+
+.content-col {
+  width: 40%;
+}
+
+.image-col {
+  width: 60%;
+}
+
+.tours .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  align-items: center;
+}
+
+.image-gallery img {
+  max-width: 290px;
+  margin: 5px;
+}
+
+.content-col h1 {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 7vmin;
+  color: rgb(79, 79, 143);
+}
+
+.content-col p {
+  padding: 0;
+  margin: 30px auto;
+  font-family: "Golos Text", sans-serif;
+}
+
+.content-col .ctn {
+  margin-left: -100px;
+}
+
+.footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: rgb(96, 96, 155);
+  text-align: center;
+}
+
+.footer p {
+  color: whitesmoke;
+  margin: 20px auto;
+  padding: 20px auto;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+/*For Smart-phones*/
+@media only screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: rgb(100, 100, 143);
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+  /* Event section */
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col {
+    margin: 20px auto;
+  }
+
+  .col img {
+    max-width: 90%;
+  }
+
+  /* Explore section */
+
+  .explore-content {
+    width: 100%;
+  }
+
+  .tours .col {
+    width: 100%;
+  }
+
+  .image-gallery {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-gallery img {
+    width: 90%;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+}
+
+/* Effects */
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.ctn:hover {
+  /* background-color: rgb(211, 204, 204); */
+  /* color: rgb(116, 30, 30); */
+  box-shadow: 2px 2px 5px #4f474756;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: black;
+  cursor: pointer;
+}

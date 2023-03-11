@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statue of unity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="images/logo.png" alt="" class="logo">
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li class="ctn"><a href="#footer">Contact</a></li>
+        </ul>
+
+        <img src="images/img6.png" alt="" class="menu-btn">
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <h2>Explore The World's Tallest Statue </h2>
+            <div class="line"></div>
+            <h1>Statue Of Unity</h1>
+
+        </div>
+    </header>
+
+    <!-- events -->
+    <section class="events">
+        <div id="places" class="title">
+            <h1>Popular Places You Must Visit</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="images/event1.jpg" alt="">
+                <h4>River Rafting</h4>
+                <p>River rafting is undoubtedly one of the most enthralling and physically demanding adventure sports in
+                    the world. Narmada, the largest west flowing river in the country, and the lifeline of millions has
+                    now ushered in the thrilling experience for the adventure enthusiasts who can now enjoy river
+                    rafting in 4.5 km. stretch with whirlpools, rapids and many turns which provide an exciting and
+                    unforgettable rafting experience for the first time in Gujarat.
+                </p>
+
+            </div>
+
+            <div class="col">
+                <img src="images/event2.jpg" alt="">
+                <h4>Cactus Garden</h4>
+                <p>The Cactus Garden is a unique botanical garden at the Statue of Unity site, created to exhibit a huge
+                    variety of Cacti and succulents, the true miracles of adaptation. The thought behind the development
+                    of the cactus garden is to provide an experience of the desert ecosystem in the midst of a landmass
+                    well entrenched in an aquatic surrounding. There are 6 lakh plants of 450 species spread across 25
+                    acres of open land and inside the dome having an area of 836 square metres.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="explore">
+        <div class="explore-content">
+            <h1>Booking Information</h1>
+            <div class="line"></div>
+            <p>The Statue of Unity opens at 8:00 AM and closes at 6:00 PM from Tuesday to Sunday.</p>
+            <br>
+            <p>The Laser Light and Sound Show can be viewed from 7:00 PM onwards daily, except on Mondays.</p><br>
+            <p>The Statue of Unity is closed on Mondays for maintenance work.</p><br><br><br><br>
+            <h3 class="primary">TICKETS AVAILABLE AT SHRESHTA BHARAT BHAVAN</h3><br><br>
+            <p class="first"> Entry Ticket 7:30 AM - 5:00 PM*</p><br><br><br>
+            <h3 class="primary">TICKETS AVAILABLE AT SOU TICKETING CENTRE</h3><br><br>
+            <p class="first">Entry Ticket 7:30 AM - 5:30 PM*</p>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Image Gallery</h1>
+                <div class="line"></div>
+                <p>The pictures of Statue Of Unity with differnt angles in various environmental conditions. This images
+                    shows us the pride of the world's tallest statue in the beauty of nature.</p>
+
+            </div>
+
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="images/img11.jpg" alt="">
+                    <img src="images/img12.jpg" alt="">
+                    <img src="images/img13.jpg" alt="">
+                    <img src="images/img14.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="footer">
+        <p>Copyright @ 2023 Statue Of Unity. | Last Updated on 04-2-2023
+        </p>
+
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn")
+        const navlinks = document.querySelector(".nav-links")
+        menuBtn.addEventListener("click", () => {
+            navlinks.classList.toggle("mobile-menu")
+        })
+
+
+    </script>
+
+</body>
+
+</html>
